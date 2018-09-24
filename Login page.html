@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" 
+               href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <!--jQuery library--> 
+        <script 
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+        </script>
+
+
+        <!--Latest compiled and minified JavaScript--> 
+        <script 
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .navbar{
+                height: 68px;
+                padding-top: 0px;
+                padding-left: 0px;
+            }
+            .banner-image{
+                padding-top: 75px;
+                padding-bottom: 50px;
+                text-align: center;
+                /*color: #f8f8f8;*/
+                background:url('img/intro-bg_1.jpg');
+                background-size: cover;
+                padding-left: 300px;
+            }
+            .banner-content{
+                position: relative;
+                padding-top:6%;   
+                padding-bottom: 6%;
+                margin-top: 12%;
+                margin-bottom: 12%;
+                /*background-color: rgba(0, 0, 0, 0.7);*/
+                max-width: 660px;
+            }
+            .down{
+               padding: 10px 0;
+               background-color: #101010;
+               color:#9d9d9d;
+               bottom: 0;
+               width: 100%;
+            }
+            
+        </style>
+    </head>
+    <body>
+         <div class="navbar navbar-inverse navbar-fixed-top">.
+            <div class='container'>
+                <div class='navbar-header'>
+                  <a href='Index page.html' class='navbar-brand '> 
+                      LifeStyle Store </a>  
+                </div>
+                <ul class='nav navbar-nav navbar-right'>
+                    <li><a href='Signup page.html'>
+                            <span class='glyphicon glyphicon-user'>SIGNUP</span>
+                        </a> 
+                    </li>
+                    <li>
+                        <a href='Login page.html'>
+                            <span class='glyphicon glyphicon-arrow-right'>LOGIN</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>    
+        </div>
+        <div class="banner-image">
+            <div class="container banner-content">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="text-warning">
+                                    LOGIN to make purchase</h4>
+                            </div>
+                            <div class="panel-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control"
+                                               name="email" required="true">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <input type="password" class="form-control"
+                                               name="password" required="true">
+                                    </div>
+                                    <div class="g-recaptcha" data-sitekey="6Lf43m8UAAAAAMlvRLeKa51nP9phT-xTJ28hn-Vg"></div>
+                                </form> 
+                                 <button type="submit" class="btn btn-primary">
+                                Log In
+                            </button>
+                            </div>
+                            <div class="panel-bottom">
+                                <h4>Dont have a acoount?
+                                    <a href="Signup page.html">REGISTER</a></h4>
+                            </div>
+                            <p>Change password .Click 
+                                <a href="Settings page.html">HERE</a></p>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+             <div class='down'>
+                 <center>
+                    <p>Copyright © Lifestyle Store. All Rights Reserved | 
+                        Contact Us: +91 90000 00000”.</p>
+                 </center>
+                </div>
+        </footer>
+    </body>
+</html>
